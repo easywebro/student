@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightblue;
+        }
+
+        .container {
+            background: lightblue;
+            padding: 50px;
+        }
+
+
+        input[type="text"],
+        input[type="possword"],
+        textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type="text"]:focus, input[type=possward]:focus {
+            background-color: orange;
+        }
+        div {
+            padding: 10px 0;
+        }
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <center> <h1>Student Registeration Form</h1></center>
+            <hr>
+            <lable>first Name</lable>
+            <input type="text" name="firstname" placeholder="Firstname" size="15" required/>
+            <lable>Middlename:</lable>
+            <input type="text" name="Middlename" placeholder="Middlename" size="15" required/>
+            <label>Lastname:</label>
+            <input type="text" name="lastname" placeholder="Lastname" size="15" required/>
+        </div>
+        <lable>
+            Course:
+        </lable>
+
+        <select>
+            <option value="Course">Course</option>
+            <option value="CS">CS</option>
+            <option value="MSc">MSc</option>
+            <option value="BCA">BCA</option>
+            <option value="MBA">MBA</option>
+            <option value="MCA">MCA</option>
+            <option value="B.Tec">B.Tec</option>
+        </select>
+    </div>
+
+        <div>
+        <lable>
+            Gender:
+        </lable><br>
+        <input type="radio" value="Male" name="gender" checked > Male
+        <input type="redio" value="Female" name="gender" checked> Female
+        <input type="redio" value="Other" name="gender" checked> Other
+    </div>
+        <lable>
+            Phone:
+        </lable>
+        <input type="text" name="Country code" placeholder="Country code" value="+91" size="2"/>
+        <input type="text" name="phone" placeholder="Phone no." size="10"required/>
+        
+        Current Adaress:
+        <textarea cols="80" row="5" placeholder="Current Address" value="address"required>
+
+        </textarea>
+        <lable for="email"><b>Email</b></lable>
+        <input type="text" placeholder="Enter Email" name="email"required>
+
+        <lable for="psw"><b>Possward</b></lable>
+        <input type="passward" placeholder="Enter Passward" name="psw" required>
+        <lable for="psw-reapt"><b>Re-type possward</b></lable>
+        <input type="Passward" placeholder="Retype Passward" name="psw-repeat" required>
+        <button type="submit" class="registerbtn">Register</button>
+
+
+    </form>
+</body>
+</html>
